@@ -57,4 +57,41 @@
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
   </circuit>
+  <circuit name="Reg16bit">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="Reg16bit"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(1180,670)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(1210,670)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(1240,610)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="radix" val="16"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="0" loc="(1360,700)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="radix" val="16"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="4" loc="(1260,670)" name="Register">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="width" val="16"/>
+    </comp>
+    <wire from="(1180,670)" to="(1180,740)"/>
+    <wire from="(1180,740)" to="(1260,740)"/>
+    <wire from="(1210,670)" to="(1210,720)"/>
+    <wire from="(1210,720)" to="(1260,720)"/>
+    <wire from="(1240,610)" to="(1240,700)"/>
+    <wire from="(1240,700)" to="(1260,700)"/>
+    <wire from="(1320,700)" to="(1360,700)"/>
+  </circuit>
 </project>
